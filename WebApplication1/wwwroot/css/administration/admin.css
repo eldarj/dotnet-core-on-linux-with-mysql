@@ -26,7 +26,6 @@ a:focus {
     line-height: 1.5;
     border-radius: .2rem;
 }
-
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -146,9 +145,9 @@ input[type=file] {
     padding-top: 3px;
 }
 
-/* ---------------------------------------------------
-    DATA TABLES - TABLE
------------------------------------------------------ */
+.table.bs-datatable tbody td .btn.btn-danger.ajax-delete-row i {
+    color: #fff !important;
+}
 
 .table .divRow {
     display: table-row;
@@ -158,25 +157,25 @@ input[type=file] {
     position: relative;
 }
 
-    .divRow .card {
-        position: relative;
-    }
+.divRow .card {
+    position: relative;
+}
 
-    .divRow .closeDivRow {
-        position: absolute;
-        bottom: 0;
-        right: 5px;
-        color: #fff;
-        padding: 2.5px 7.5px;
-        margin-bottom: 5px;
-        border-radius: 2.5px;
-        cursor: pointer;
-        background: red;
-    }
+.divRow .closeDivRow {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    color: #fff;
+    padding: 2.5px 7.5px;
+    margin-bottom: 5px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    background: red;
+}
 
-        .divRow .closeDivRow:hover {
-            text-decoration: underline;
-        }
+.divRow .closeDivRow:hover {
+    text-decoration: underline;
+}
 
 .nowrap {
     white-space: nowrap;
@@ -205,12 +204,6 @@ input[type=file] {
 }
 .dataTables_wrapper .page-item.disabled .page-link {
     color: #aaa;
-}
-div.dataTables_wrapper div.dataTables_paginate ul.pagination li.page-item.disabled + li.page-item a.page-link {
-    background: #fff;
-    color: #aaa;
-    border-color: #dee2e6;
-    pointer-events: none;
 }
 .dataTables_wrapper .page-link:hover {
     background: #f2f2f2;

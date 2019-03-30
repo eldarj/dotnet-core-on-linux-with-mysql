@@ -85,12 +85,9 @@ namespace WebApplication1.Areas.Admin.Controllers
                 return RedirectToAction("Index", "Category", new { area = "Admin" });
             }
 
-            return PartialView("Index", AllCategories());
+            return PartialView("Index", PreparePosts());
         }
 
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
