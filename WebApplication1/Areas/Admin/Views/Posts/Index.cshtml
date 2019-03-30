@@ -1,0 +1,50 @@
+﻿@model PostListVM
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Članci</h2>
+            <hr />
+        </div>
+        <div class="card-text">
+            <table class="table bs-datatable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Naziv</th>
+                        <th>Opis</th>
+                        <th>Tekst</th>
+                        <th>Broj pregleda</th>
+                        <th>Broj lajkova</th>
+                        <th>Više</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var x in Model.Items)
+                    {
+                    <tr>
+                        <td>@x.PostId</td>
+                        <td>@x.Title</td>
+                        <td>@x.Description</td>
+                        <td>@x.Body</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a asp-action="Edit" asp-controller="Posts" asp-area="Admin" asp-route-id="@x.PostId"
+                                   ajax-poziv="da" ajax-rezultat="modAjaxContainer" class="btn btn-xs btn-primary"><i class="fas fa-edit"></i></a>
+                                <a asp-action="Delete" asp-controller="Posts" asp-area="Admin" asp-route-id="@x.PostId"
+                                   ajax-poziv="ajaxDa" ajax-rezultat="modAjaxContainer" class="btn btn-xs btn-danger ajax-delete-row"><i class="fas fa-trash-alt"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+            <hr />
+            <br />
+            <a asp-action="Create" asp-controller="Posts" asp-area="Admin"
+               ajax-poziv="ajaxDa" ajax-rezultat="modAjaxContainer" class="btn btn-sm btn-danger">Napiši novi članak</a>
+            <br /><br />
+        </div>
+    </div>
+</div>

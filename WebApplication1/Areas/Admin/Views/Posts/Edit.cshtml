@@ -1,0 +1,58 @@
+﻿@model PostEditVM
+
+<div class="card">
+    <small class="closeDivRow @(Model.PredefinedCategory ? "" : "d-none")">Zatvori</small>
+    <div class="card-body">
+        <div class="card-title">
+            @if (Model.Title != null)
+            {
+                <h2>Članak <span class="badge badge-danger">@Model.Title</span></h2>
+            }
+            else
+            {
+                <h2>Novi članak</h2>
+            }
+            <br />
+        </div>
+        <div class="card-text">
+            <form asp-action="Save" asp-controller="Posts" asp-area="Admin"
+                  ajax-poziv="da" ajax-rezultat="modAjaxContainer"
+                  data-alertify data-alertify-btn-pre-text="Uspješno ste spremili podatke!">
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="col-sm">
+                        <input asp-for="PostId" type="hidden" />
+                        <input asp-for="PredefinedCategory" type="hidden" />
+                        <div class="form-group">
+                            <label asp-for="Title" class="control-label"></label>
+                            <input type="text" asp-for="Title" class="form-control" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group @(Model.PredefinedCategory ? "d-none" : "")">
+                            <label asp-for="CategoryId" class="control-label"></label>
+                            <select asp-for="CategoryId" asp-items="@Model.Categories" class="form-control">
+                                <option disabled>Odaberite kategoriju</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <input type="submit" value="Snimi" class="btn btn-sm btn-primary" />
+                <a asp-action="Index" asp-controller="Posts" asp-area="Admin" class="btn btn-sm btn-danger @(Model.PredefinedCategory ? "d-none" : "")">Nazad</a>
+            </form>
+            <br />
+            <div id="modAjaxSubContainer">
+            </div>
+        </div>
+    </div>
+</div>
+
