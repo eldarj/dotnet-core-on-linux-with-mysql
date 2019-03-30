@@ -210,6 +210,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination li.page-item.disabl
     background: #fff;
     color: #aaa;
     border-color: #dee2e6;
+    pointer-events: none;
 }
 .dataTables_wrapper .page-link:hover {
     background: #f2f2f2;
