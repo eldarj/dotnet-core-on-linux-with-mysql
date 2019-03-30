@@ -82,7 +82,7 @@ namespace WebApplication1.Areas.Admin.Controllers
 
             if (x.PredefinedCategory)
             {
-                return RedirectToAction("Index", "Category", new { area = "Admin" });
+                return RedirectToAction("IndexPartial", "Category", new { area = "Admin" });
             }
 
             return PartialView("Index", PreparePosts());

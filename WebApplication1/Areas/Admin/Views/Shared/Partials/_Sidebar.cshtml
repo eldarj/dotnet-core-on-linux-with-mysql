@@ -2,27 +2,27 @@
 <nav id="sidebar">
     <div class="sidebar-header">
         <div class="text-center mod-dashboard-badge">
-            <h6>eDostava!</h6>
+            <h6>Portal!</h6>
         </div>
         <strong>BS</strong>
     </div>
     <ul class="list-unstyled components">
         <li>
-            <a asp-action="Index" asp-controller="Moderator" asp-area="AdminModul">
+            <a asp-action="Index" asp-controller="Dashboard" asp-area="Admin">
                 <i class="fas fa-tachometer-alt"></i>
                 Dashboard
             </a>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Restoran" asp-area="AdminModul">
-                <i class="fas fa-utensils"></i>
-                Restorani
+            <a asp-action="Index" asp-controller="Restoran" asp-area="Admin">
+                <i class="fas fa-newspaper"></i>
+                Članci
             </a>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Vlasnik" asp-area="AdminModul">
-                <i class="fas fa-user-tie"></i>
-                Vlasnici
+            <a asp-action="Index" asp-controller="Vlasnik" asp-area="Admin">
+                <i class="fas fa-bookmark"></i>
+                Kategorije
             </a>
         </li>
         <li>
@@ -32,21 +32,21 @@
             </a>
             <ul class="collapse list-unstyled" id="lokacijeDropdown">
                 <li>
-                    <a asp-action="Index" asp-controller="Grad" asp-area="AdminModul">Gradovi</a>
+                    <a asp-action="Index" asp-controller="Grad" asp-area="Admin">Gradovi</a>
                 </li>
                 <li>
-                    <a asp-action="Index" asp-controller="Blok" asp-area="AdminModul">Blokovi</a>
+                    <a asp-action="Index" asp-controller="Blok" asp-area="Admin">Blokovi</a>
                 </li>
             </ul>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Narucilac" asp-area="AdminModul">
+            <a asp-action="Index" asp-controller="Narucilac" asp-area="Admin">
                 <i class="fas fa-users"></i>
                 Narucioci
             </a>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Narudzba" asp-area="AdminModul">
+            <a asp-action="Index" asp-controller="Narudzba" asp-area="Admin">
                 <i class="fas fa-receipt"></i>
                 Narudžbe
             </a>

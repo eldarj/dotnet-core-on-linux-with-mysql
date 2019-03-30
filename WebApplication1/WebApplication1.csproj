@@ -16,9 +16,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\ViewModels\Categories\" />
-    <Folder Include="Areas\Admin\Views\Categories\" />
     <Folder Include="wwwroot\images\administration\" />
+    <Folder Include="wwwroot\lib\summernote\" />
     <Folder Include="wwwroot\upload\" />
   </ItemGroup>
 

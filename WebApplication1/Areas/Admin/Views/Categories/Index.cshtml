@@ -1,0 +1,62 @@
+﻿@model CategoryListVM
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Kategorije</h2>
+            <hr />
+        </div>
+        <div class="card-text">
+            <table class="table bs-datatable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Naziv</th>
+                        <th>Broj članaka</th>
+                        <th>Broj pregleda</th>
+                        <th>Broj lajkova</th>
+                        <th>Najpopularniji članci</th>
+                        <th>Više</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var x in Model.Items)
+                    {
+                        <tr>
+                            <td>@x.CatId</td>
+                            <td>@x.Name</td>
+                            <td>@x.TotalPosts</td>
+                            <td>@x.TotalHits</td>
+                            <td>@x.TotalLikes</td>
+                            <td>
+                                @if (x.PopularPosts.Count == 0)
+                                {
+                                    @:-
+                                }
+                                @foreach (KeyValuePair<int, string> post in x.PopularPosts)
+                                {
+                                    <a asp-action="Edit" asp-controller="Posts" asp-area="Admin" asp-route-id="@post.Key"
+                                       ajax-poziv="ajaxDa" ajax-rezultat="modAjaxContainer" class="badge badge-danger">
+                                        @post.Value
+                                    </a>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a asp-action="Edit" asp-controller="Posts" asp-area="Admin" asp-route-id="@x.CatId"
+                                       ajax-poziv="da" ajax-rezultat="modAjaxContainer" class="btn btn-xs btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a asp-action="Delete" asp-controller="Posts" asp-area="Admin" asp-route-id="@x.CatId"
+                                       ajax-poziv="ajaxDa" ajax-rezultat="modAjaxContainer" class="btn btn-xs btn-danger ajax-delete-row"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <hr />
+            <br />
+            <a asp-action="Create" asp-controller="Posts" asp-area="Admin"
+               ajax-poziv="ajaxDa" ajax-rezultat="modAjaxContainer" class="btn btn-sm btn-danger">Napiši novi članak</a>
+            <br /><br />
+        </div>
+    </div>
+</div>

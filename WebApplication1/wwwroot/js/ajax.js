@@ -166,6 +166,16 @@
                 }
             });
         }
+
+        // Check for quill editor in form
+        // -- Populate hidden form on submit
+        //var quillText = document.querySelector('input.hidden-quill');
+        //console.log(quill.getContents());
+        //quillText.value = JSON.stringify(quill.getContents());
+        //console.log(quillText);
+
+        console.log("Submitted", $(form).serialize(), $(form).serializeArray());
+
         if (valid) {
             form.attr("ajax-poziv", "dodan");
             event.preventDefault();
@@ -215,7 +225,7 @@
                         console.log(data.statusCode);
                         console.log(data.statusText);
                         $("html").html(data.responseText)
-                            .prepend(`<a href='/AdminModul/Moderator'
+                            .prepend(`<a href='/Admin/Moderator'
                                          style='background: red; padding: 10px; color: #fff; border-radius: 5px;
                                                 position: absolute; top: 10px; right: 5px; position: fixed;'>
                                             Nazad na aplikaciju

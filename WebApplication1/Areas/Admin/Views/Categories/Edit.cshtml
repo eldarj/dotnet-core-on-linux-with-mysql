@@ -1,0 +1,42 @@
+﻿@model CategoryEditVM
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            @if (Model.Name != null)
+            {
+                <h2>Članak <span class="badge badge-danger">@Model.Name</span></h2>
+            }
+            else
+            {
+                <h2>Novi članak</h2>
+            }
+            <br />
+        </div>
+        <div class="card-text">
+            <form asp-action="Save" asp-controller="Categories" asp-area="Admin"
+                  ajax-poziv="da" ajax-rezultat="modAjaxContainer"
+                  data-alertify data-alertify-btn-pre-text="Uspješno ste spremili podatke!">
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="col-sm">
+                        <input asp-for="CatId" type="hidden" />
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input type="text" asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <input type="submit" value="Snimi" class="btn btn-sm btn-primary" />
+                <a asp-action="Index" asp-controller="Categories" asp-area="Admin" class="btn btn-sm btn-danger">Nazad</a>
+            </form>
+            <br />
+            <div id="modAjaxSubContainer">
+            </div>
+        </div>
+    </div>
+</div>
+

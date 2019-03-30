@@ -80,7 +80,7 @@ small.bold {
     align-items: center;
     justify-content: center;
     margin: auto;
-    color: red;
+    color: #145DB8;
 }
 
 .div-image-holder {
@@ -231,7 +231,7 @@ input[type=file] {
     left: 0;
     height: 100vh;
     z-index: 10;
-    background: linear-gradient(to bottom, #FB404B 0%, #bb0502 100%);
+    background: linear-gradient(to bottom, #145DB8 0%, #145D60 100%);
 }
 
     #sidebar:after {
@@ -292,7 +292,7 @@ input[type=file] {
 
     #sidebar ul.components {
         padding: 10px;
-        border-bottom: 1px solid #911b23;
+        border-bottom: 1px solid #145DB8;
     }
 
     #sidebar ul li a {
@@ -391,6 +391,14 @@ a.article:hover {
 .content-body .card .card-body.big-icon {
     overflow: hidden;
 }
+
+/* ---------------------------------------------------
+    QUILL EDITOR
+----------------------------------------------------- */
+#quill-editor {
+    /*min-height: 100px;*/
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
