@@ -9,6 +9,8 @@ namespace DataLib
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Moderator> Moderators { get; set; }
+        public DbSet<AuthToken> AuthTokens { get; set; }
 
         public MyContext(DbContextOptions<MyContext> options) : base(options) { }
 
@@ -25,10 +27,10 @@ namespace DataLib
             {
                 entity.HasKey(p => p.PostID);
                 entity.HasOne(p => p.Category).WithMany(c => c.Posts);
-                entity.HasOne(p => p.Admin).WithMany(a => a.Posts);
+                entity.HasOne(p => p.Moderator).WithMany(a => a.Posts);
             });
 
-            modelBuilder.Entity<Admin>(entity =>
+            modelBuilder.Entity<Moderator>(entity =>
             {
                 entity.HasKey(a => a.UserID);
             });

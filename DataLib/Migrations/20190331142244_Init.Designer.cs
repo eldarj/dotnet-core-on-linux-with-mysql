@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataLib.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20190331124624_UsersAdmins")]
-    partial class UsersAdmins
+    [Migration("20190331142244_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,7 +19,19 @@ namespace DataLib.Migrations
                 .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("DataLib.Models.Admin", b =>
+            modelBuilder.Entity("DataLib.Models.Category", b =>
+                {
+                    b.Property<int>("CategoryID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("CategoryID");
+
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("DataLib.Models.Moderator", b =>
                 {
                     b.Property<int>("UserID")
                         .ValueGeneratedOnAdd();
@@ -34,19 +46,7 @@ namespace DataLib.Migrations
 
                     b.HasKey("UserID");
 
-                    b.ToTable("Admin");
-                });
-
-            modelBuilder.Entity("DataLib.Models.Category", b =>
-                {
-                    b.Property<int>("CategoryID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("CategoryID");
-
-                    b.ToTable("Categories");
+                    b.ToTable("Moderators");
                 });
 
             modelBuilder.Entity("DataLib.Models.Post", b =>
@@ -54,34 +54,34 @@ namespace DataLib.Migrations
                     b.Property<int>("PostID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("AdminUserID");
-
                     b.Property<string>("Body");
 
                     b.Property<int?>("CategoryID");
 
                     b.Property<string>("Description");
 
+                    b.Property<int?>("ModeratorUserID");
+
                     b.Property<string>("Title");
 
                     b.HasKey("PostID");
 
-                    b.HasIndex("AdminUserID");
-
                     b.HasIndex("CategoryID");
+
+                    b.HasIndex("ModeratorUserID");
 
                     b.ToTable("Posts");
                 });
 
             modelBuilder.Entity("DataLib.Models.Post", b =>
                 {
-                    b.HasOne("DataLib.Models.Admin", "Admin")
-                        .WithMany("Posts")
-                        .HasForeignKey("AdminUserID");
-
                     b.HasOne("DataLib.Models.Category", "Category")
                         .WithMany("Posts")
                         .HasForeignKey("CategoryID");
+
+                    b.HasOne("DataLib.Models.Moderator", "Moderator")
+                        .WithMany("Posts")
+                        .HasForeignKey("ModeratorUserID");
                 });
 #pragma warning restore 612, 618
         }

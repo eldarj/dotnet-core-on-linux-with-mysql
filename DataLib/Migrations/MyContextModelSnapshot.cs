@@ -17,22 +17,24 @@ namespace DataLib.Migrations
                 .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("DataLib.Models.Admin", b =>
+            modelBuilder.Entity("DataLib.Models.AuthToken", b =>
                 {
-                    b.Property<int>("UserID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("DatumKreiranja");
+                    b.Property<DateTime>("DateGenerated");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Ip");
 
-                    b.Property<string>("Password");
+                    b.Property<int?>("ModeratorId");
 
-                    b.Property<string>("Username");
+                    b.Property<string>("Value");
 
-                    b.HasKey("UserID");
+                    b.HasKey("Id");
 
-                    b.ToTable("Admin");
+                    b.HasIndex("ModeratorId");
+
+                    b.ToTable("AuthTokens");
                 });
 
             modelBuilder.Entity("DataLib.Models.Category", b =>
@@ -47,12 +49,28 @@ namespace DataLib.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("DataLib.Models.Moderator", b =>
+                {
+                    b.Property<int>("UserID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("DatumKreiranja");
+
+                    b.Property<string>("Email");
+
+                    b.Property<string>("Password");
+
+                    b.Property<string>("Username");
+
+                    b.HasKey("UserID");
+
+                    b.ToTable("Moderators");
+                });
+
             modelBuilder.Entity("DataLib.Models.Post", b =>
                 {
                     b.Property<int>("PostID")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<int?>("AdminUserID");
 
                     b.Property<string>("Body");
 
@@ -60,26 +78,35 @@ namespace DataLib.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<int?>("ModeratorUserID");
+
                     b.Property<string>("Title");
 
                     b.HasKey("PostID");
 
-                    b.HasIndex("AdminUserID");
-
                     b.HasIndex("CategoryID");
+
+                    b.HasIndex("ModeratorUserID");
 
                     b.ToTable("Posts");
                 });
 
+            modelBuilder.Entity("DataLib.Models.AuthToken", b =>
+                {
+                    b.HasOne("DataLib.Models.Moderator", "Moderator")
+                        .WithMany()
+                        .HasForeignKey("ModeratorId");
+                });
+
             modelBuilder.Entity("DataLib.Models.Post", b =>
                 {
-                    b.HasOne("DataLib.Models.Admin", "Admin")
-                        .WithMany("Posts")
-                        .HasForeignKey("AdminUserID");
-
                     b.HasOne("DataLib.Models.Category", "Category")
                         .WithMany("Posts")
                         .HasForeignKey("CategoryID");
+
+                    b.HasOne("DataLib.Models.Moderator", "Moderator")
+                        .WithMany("Posts")
+                        .HasForeignKey("ModeratorUserID");
                 });
 #pragma warning restore 612, 618
         }
