@@ -71,7 +71,7 @@ namespace WebApplication1.Areas.Admin.Controllers
 
             ctx.SaveChanges();
 
-            return PartialView("IndexPartial");
+            return RedirectToAction("IndexPartial");
         }
 
         public async Task<IActionResult> Delete(int? id)
@@ -103,8 +103,8 @@ namespace WebApplication1.Areas.Admin.Controllers
                     {
                         CatId = x.CategoryID,
                         Name = x.Name,
-                        TotalHits = 1249, //TODO
-                        TotalLikes = 205, //TODO
+                        TotalHits = 1, //TODO
+                        TotalLikes = 0, //TODO
                         TotalPosts = ctx.Posts.Where(p => p.Category.CategoryID == x.CategoryID).Count(),
                         PopularPosts = ctx.Posts
                             .Where(p => p.Category.CategoryID == x.CategoryID)

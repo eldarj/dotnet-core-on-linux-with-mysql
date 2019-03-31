@@ -1,4 +1,4 @@
-
+﻿
 /*-------------------------------------------------
  =  Table of Css
 
@@ -169,7 +169,7 @@ header.active .nav-list-container {
   display: inline-block;
   color: #777777;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   line-height: 15px;
 }
@@ -242,7 +242,7 @@ header.active .nav-list-container {
   -o-transition: all 0.2s ease-in-out;
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -287,7 +287,7 @@ header.active .nav-list-container {
 .advertisement span {
   color: #ccc;
   font-size: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: block;
   margin-bottom: 7px;
   text-transform: uppercase;
@@ -305,7 +305,7 @@ header.active .nav-list-container {
 .navbar-nav > li > a {
   color: #333333 !important;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
@@ -416,7 +416,7 @@ header.active .nav-list-container {
   display: block;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   padding: 15px 20px;
@@ -500,7 +500,7 @@ header.active .nav-list-container {
   display: block;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 15px 20px;
@@ -546,7 +546,7 @@ header.active .nav-list-container {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 3px 10px;
@@ -585,7 +585,7 @@ header.active .nav-list-container {
 .navbar-nav .megadropdown .inner-megadropdown .owl-wrapper h1 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -669,7 +669,7 @@ header.active .nav-list-container {
   padding: 10px;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -733,7 +733,7 @@ header.second-style .navbar-form button {
 }
 /*header 3, header 4 */
 header.third-style .navbar-brand {
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 header.third-style .navbar-nav > li > a {
   padding-top: 15px;
@@ -834,7 +834,7 @@ body.boxed #container {
 p {
   font-size: 14px;
   color: #666666;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -846,7 +846,7 @@ p {
 .title-section h1 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -926,7 +926,7 @@ a.category-post {
   -o-transition: all 0.2s ease-in-out;
   color: #ffffff;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 4px 10px;
@@ -997,7 +997,7 @@ section.ticker-news {
   color: #ffffff;
   font-size: 11px;
   line-height: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 8px 14px;
@@ -1032,7 +1032,7 @@ section.ticker-news {
   color: #ffffff;
   font-size: 9px;
   line-height: 9px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   padding: 3px;
   background: #222222;
@@ -1045,7 +1045,7 @@ section.ticker-news {
 .ticker-news-box .ticker-content {
   color: #999999;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
 }
@@ -1374,7 +1374,7 @@ section.feature-video .owl-theme .owl-controls .owl-buttons div.owl-next:hover:a
   -o-transition: all 0.2s ease-in-out;
   color: #333333;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 6px 11px;
   border: 1px solid #f0f0f0;
   -webkit-border-radius: 3px;
@@ -1393,7 +1393,7 @@ section.feature-video .owl-theme .owl-controls .owl-buttons div.owl-next:hover:a
   margin: 0;
   color: #333333;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .pagination-box p {
   text-align: right;
@@ -1639,7 +1639,7 @@ section.feature-video .owl-theme .owl-controls .owl-buttons div.owl-next:hover:a
   border-radius: 4px;
   color: #666666;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1823,7 +1823,7 @@ section.feature-video .owl-theme .owl-controls .owl-buttons div.owl-next:hover:a
   background: #333333;
   color: #999999;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 1px;
   position: relative;
@@ -2138,7 +2138,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
 .heading-news4 .news-post.image-post4 .post-content h2 {
   color: #ffffff;
   font-size: 26px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 34px;
@@ -2212,7 +2212,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   padding-top: 10px;
   color: #cccccc;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0;
   position: relative;
@@ -2343,7 +2343,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   margin: 0;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 15px;
 }
@@ -2373,7 +2373,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
 .sidebar .subscribe-widget form h1 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -2387,7 +2387,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   padding: 14px 20px 11px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border: transparent;
   margin: 0;
   line-height: 12px;
@@ -2453,7 +2453,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   border-radius: 0px;
   color: #ffffff;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -2498,7 +2498,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 6px 9px;
   border: 1px solid #f0f0f0;
   -webkit-border-radius: 3px;
@@ -2573,7 +2573,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   padding-left: 20px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
 }
 .sidebar .recent-comments-widget ul.comment-list li .comment-content span i {
@@ -2585,7 +2585,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
 .sidebar .review-widget h1 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -2614,7 +2614,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
 .sidebar .review-widget ul.review-posts-list li h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -2637,7 +2637,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   margin-right: 5px;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -2681,7 +2681,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   display: block;
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 .sidebar .categories-widget ul.category-list li a span {
@@ -2742,7 +2742,7 @@ section.big-slider .big-bxslider li .image-post2 .hover-box .inner-hover h2 {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-left: 5px;
 }
 .sidebar .flickr-widget > a:hover {
@@ -2781,7 +2781,7 @@ form.search-form input[type="text"] {
   padding: 10px;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -2835,7 +2835,7 @@ a.read-more-button {
   border-radius: 4px;
   color: #666666;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2891,7 +2891,7 @@ a.read-more-button:hover {
 .image-post .hover-box .inner-hover h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -2929,7 +2929,7 @@ a.read-more-button:hover {
   margin-right: 7px;
   color: #ccc;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -2959,7 +2959,7 @@ span.top-stories {
   color: #ffffff;
   display: inline-block;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 4px 10px;
@@ -3013,7 +3013,7 @@ ul.post-tags li {
   margin-right: 7px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3052,7 +3052,7 @@ ul.post-tags li:last-child {
 .standard-post .post-content h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3082,7 +3082,7 @@ ul.post-tags li:last-child {
 .standard-post2 .post-title h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3120,7 +3120,7 @@ ul.post-tags li:last-child {
 .standard-post3 .post-title h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3206,7 +3206,7 @@ ul.post-tags li:last-child {
 .image-post2 .hover-box h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3287,7 +3287,7 @@ ul.list-posts > li .post-content > a {
   display: block;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 0;
   line-height: 16px;
@@ -3298,7 +3298,7 @@ ul.list-posts > li .post-content > a:hover {
 }
 ul.list-posts > li .post-content h2 {
   color: #333333;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3340,7 +3340,7 @@ ul.list-posts > li .post-content h2 a:hover {
 .image-post3 .hover-box h2,
 .video-post .hover-box h2 {
   color: #333333;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3414,7 +3414,7 @@ button.mfp-arrow {
 .article-post .post-content h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3470,7 +3470,7 @@ button.mfp-arrow {
 .large-post .post-title h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3516,7 +3516,7 @@ div.list-post .post-content > a {
   display: block;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 0;
   line-height: 16px;
@@ -3527,7 +3527,7 @@ div.list-post .post-content > a:hover {
 }
 div.list-post .post-content h2 {
   color: #333333;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3573,7 +3573,7 @@ div.list-post .post-content h2 a:hover {
 .very-large-post .title-post h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -3722,7 +3722,7 @@ div.list-post .post-content h2 a:hover {
   -o-transition: all 0.2s ease-in-out;
   color: #666666;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   float: left;
 }
 .very-large-post .share-box a.likes i {
@@ -3749,7 +3749,7 @@ div.list-post .post-content h2 a:hover {
   display: inline-block;
   color: #666666;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .very-large-post .share-box ul.share-list-post li > i {
   font-size: 14px;
@@ -3808,7 +3808,7 @@ div.list-post .post-content h2 a:hover {
   color: #ccc;
   font-size: 12px;
   display: inline-block;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 0;
 }
@@ -3848,7 +3848,7 @@ div.list-post .post-content h2 a:hover {
 .single-post-box .title-post h1 {
   color: #333333;
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 30px;
   margin: 0 0 8px;
@@ -3865,7 +3865,7 @@ div.list-post .post-content h2 a:hover {
   display: inline-block;
   color: #666666;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-right: 8px;
   margin-bottom: 2px;
 }
@@ -3929,7 +3929,7 @@ div.list-post .post-content h2 a:hover {
   display: inline-block;
   color: #aaa;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 0;
 }
@@ -3991,7 +3991,7 @@ div.list-post .post-content h2 a:hover {
 .single-post-box > .post-content > h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4063,7 +4063,7 @@ div.list-post .post-content h2 a:hover {
   display: inline-block;
   color: #aaa;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 0;
 }
@@ -4073,7 +4073,7 @@ div.list-post .post-content h2 a:hover {
 .single-post-box .article-inpost .text-content h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4125,7 +4125,7 @@ div.list-post .post-content h2 a:hover {
 .single-post-box .review-box .summary-box h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4170,7 +4170,7 @@ div.list-post .post-content h2 a:hover {
   display: inline-block;
   color: #666666;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-right: 3px;
   margin-bottom: 2px;
 }
@@ -4197,7 +4197,7 @@ div.list-post .post-content h2 a:hover {
   border-radius: 2px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .single-post-box .post-tags-box ul.tags-box li a:hover {
   background: #222222;
@@ -4254,7 +4254,7 @@ div.list-post .post-content h2 a:hover {
   display: block;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 0;
   line-height: 16px;
@@ -4265,7 +4265,7 @@ div.list-post .post-content h2 a:hover {
 }
 .single-post-box .prev-next-posts .post-content h2 {
   color: #333333;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4317,7 +4317,7 @@ div.list-post .post-content h2 a:hover {
   border-radius: 0px;
   color: #ffffff;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -4362,7 +4362,7 @@ div.list-post .post-content h2 a:hover {
   float: left;
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4371,7 +4371,7 @@ div.list-post .post-content h2 a:hover {
   content: '/';
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4465,7 +4465,7 @@ div.list-post .post-content h2 a:hover {
 .single-post-box .comment-area-box ul li .comment-box .comment-content h4 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0;
 }
@@ -4500,7 +4500,7 @@ div.list-post .post-content h2 a:hover {
 .single-post-box .comment-area-box ul li .comment-box .comment-content span {
   font-size: 12px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   font-style: italic;
   margin: 0 0 13px;
@@ -4562,7 +4562,7 @@ div.list-post .post-content h2 a:hover {
 .single-wide .image-slider .news-post .hover-box .inner-hover h1 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -4609,7 +4609,7 @@ div.list-post .post-content h2 a:hover {
   display: block;
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
   cursor: pointer;
@@ -4624,7 +4624,7 @@ div.list-post .post-content h2 a:hover {
   background: #fafafa;
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   outline: none;
   border: 1px solid #e1e1e1;
   margin: 0 0 16px;
@@ -4647,7 +4647,7 @@ div.list-post .post-content h2 a:hover {
 .contact-form-box #comment-form button {
   color: #ccc;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: #222222;
@@ -4691,7 +4691,7 @@ div.list-post .post-content h2 a:hover {
 .error-banner h1 {
   color: #ffffff;
   font-size: 48px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0 0 7px;
@@ -4749,7 +4749,7 @@ ul.autor-list > li .autor-box .autor-content .autor-title h1 {
   float: left;
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4758,7 +4758,7 @@ ul.autor-list > li .autor-box .autor-content .autor-title h1 span:after {
   content: '/';
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 10px;
@@ -4814,7 +4814,7 @@ ul.autor-list > li .autor-last-line ul.autor-tags li span {
   display: inline-block;
   color: #666666;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 30px;
   padding-right: 3px;
 }
@@ -4832,7 +4832,7 @@ ul.autor-list > li .autor-last-line ul.autor-tags li a {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 6px 10px;
   border: 1px solid #f0f0f0;
   -webkit-border-radius: 3px;
@@ -4857,7 +4857,7 @@ ul.autor-list > li .autor-last-line a.autor-site {
   color: #33a3f1;
   font-size: 13px;
   line-height: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 ul.autor-list > li .autor-last-line a.autor-site:hover {
   opacity: 0.7;
@@ -4936,7 +4936,7 @@ ul.autor-list > li:hover .autor-box {
 }
 .forum-table div.table-row > div h2 {
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: #222222;
   margin: 0 0 8px;
@@ -5007,7 +5007,7 @@ ul.autor-list > li:hover .autor-box {
 .forum-table div.table-row div.forum-post .post-autor-date h2 {
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 16px;
   margin: 0 0 3px;
@@ -5149,7 +5149,7 @@ ul.autor-list > li:hover .autor-box {
   margin: 0 0 5px;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 #log-in-popup form.login-form label span,
@@ -5167,7 +5167,7 @@ ul.autor-list > li:hover .autor-box {
   margin: 0 0 17px;
   color: #666666;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   border: 1px solid #e1e1e1;
   background: #fafafa;
@@ -5187,7 +5187,7 @@ ul.autor-list > li:hover .autor-box {
   background: #222222;
   color: #ffffff;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 49px;
@@ -5220,7 +5220,7 @@ ul.autor-list > li:hover .autor-box {
   display: inline-block;
   color: #222222;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-top: 8px;
 }
 #log-in-popup form.login-form > a,
@@ -5235,7 +5235,7 @@ ul.autor-list > li:hover .autor-box {
   float: right;
   color: #222222;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: underline;
   margin-top: 8px;
 }
@@ -5268,7 +5268,7 @@ ul.autor-list > li:hover .autor-box {
   -o-transition: all 0.2s ease-in-out;
   color: #222222;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: underline;
 }
 #log-in-popup form.login-form p.register-line a:hover,
@@ -5344,7 +5344,7 @@ body.comming-soon-page #comming-soon-content #clock .comming-part span {
   display: inline-block;
   color: #ffffff;
   font-size: 48px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 900;
   margin: 0 0 5px;
 }
@@ -5367,7 +5367,7 @@ body.comming-soon-page #comming-soon-content form.subscribe p {
 body.comming-soon-page #comming-soon-content form.subscribe h1 {
   color: #ffffff;
   font-size: 48px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0 0 20px;
@@ -5383,7 +5383,7 @@ body.comming-soon-page #comming-soon-content form.subscribe input[type=text] {
   background: #ffffff;
   color: #aaa;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   outline: none;
   border: 1px solid #eeeeee;
@@ -5413,7 +5413,7 @@ body.comming-soon-page #comming-soon-content form.subscribe button {
   outline: none;
   color: #fff;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
@@ -5532,7 +5532,7 @@ footer .footer-widgets-part {
 footer h1 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -5657,7 +5657,7 @@ footer .posts-widget ul.list-posts > li .post-content > a {
   display: block;
   color: #666666;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 0;
   line-height: 16px;
@@ -5699,7 +5699,7 @@ footer .categories-widget ul.category-list li a {
   display: block;
   color: #999999;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   padding-bottom: 15px;
   border-bottom: 1px solid #333333;
@@ -5768,7 +5768,7 @@ footer .flickr-widget a {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 footer .flickr-widget a:hover {
   color: #ffffff;
@@ -5791,7 +5791,7 @@ footer .tags-widget ul.tag-list li a {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 6px 10px;
   border: 1px solid #444444;
   background: transparent;
@@ -5821,7 +5821,7 @@ footer .subscribe-widget form input[type="text"] {
   padding: 12px;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #ffffff;
   border: none;
   width: 100%;
@@ -5897,7 +5897,7 @@ footer .recent-comments-widget div.recent-comment .comment-content span {
   display: inline-block;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
 }
 footer .recent-comments-widget div.recent-comment .comment-content span i {
@@ -5931,7 +5931,7 @@ footer .footer-last-line nav.footer-nav ul li a {
   -o-transition: all 0.2s ease-in-out;
   color: #666666;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 footer .footer-last-line nav.footer-nav ul li a:hover {
   color: #ffffff;
@@ -5944,7 +5944,7 @@ footer .footer-last-line nav.footer-nav ul li:before {
   margin-right: 13px;
   color: #666666;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 footer .footer-last-line nav.footer-nav ul li:first-child:before {
   display: none;
@@ -6506,7 +6506,7 @@ div.versions-box-choose a.toogle-box {
 div.versions-box-choose h2 {
   color: #333333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 20px;
   margin: 0 0 20px;
@@ -6539,7 +6539,7 @@ ul.demo-list li a {
   display: inline-block;
   color: #333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   font-weight: 700;
   position: relative;
@@ -6605,4 +6605,45 @@ ul.demo-list li a i {
   position: absolute;
   top: 4px;
   right: -30px;
+}
+
+
+/* DEV */
+.logotip {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 2px 1px 0;
+    position: relative;
+}
+
+.logotip:after {
+    content: "Čoko badem";
+    position: absolute;
+    left: 6px;
+    top: 7px;
+    flex-wrap: nowrap;
+}
+
+.logotip:after {
+    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+.block-content .pagination-box {
+    padding: 10px 5px 1px 5px;
+    background: #eee;
+    opacity: 0.6;
+    pointer-events: none;
 }

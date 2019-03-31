@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="wwwroot\images\administration\" />
     <Folder Include="wwwroot\lib\summernote\" />
     <Folder Include="wwwroot\upload\" />

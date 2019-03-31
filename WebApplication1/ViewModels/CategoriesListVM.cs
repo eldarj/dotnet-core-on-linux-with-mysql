@@ -12,6 +12,7 @@ namespace WebApplication1.ViewModels
         {
             public int CatId { get; set; }
             public string Name { get; set; }
+            public int PostCount { get; set; }
         }
     }
 }

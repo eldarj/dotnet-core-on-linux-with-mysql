@@ -1,4 +1,4 @@
-﻿@model PostsListVM
+﻿@model SinglePostVM
 <section class="block-wrapper">
     <div class="container">
         <div class="row">
@@ -6,29 +6,26 @@
 
                 <!-- block content -->
                 <div class="block-content">
-
-                    @foreach (var item in Model.Items)
-                    {
-                        <div class="article-post">
-                            <div class="post-content">
-                                <h2><a asp-action="Single" asp-controller="Home" asp-route-id="@item.PostId">@item.Title</a></h2>
-                                <ul class="post-tags">
-                                    <li><i class="fa fa-clock-o"></i>@item.DateCreatedStr</li>
-                                    <li><i class="fa fa-user"></i>napisao <a href="#">@item.WrittenBy</a></li>
-                                    <li><a href="#"><i class="fa fa-comments-o"></i><span>@item.TotalComments</span></a></li>
-                                    <li><i class="fa fa-eye"></i>@item.TotalHits</li>
-                                </ul>
-                                <span class="post-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </span>
-                                <p>@item.Description</p>
-                            </div>
+                    <div class="article-post">
+                        <div class="post-content">
+                            <h1>@Model.Title</h1>
+                            <ul class="post-tags">
+                                <li><i class="fa fa-clock-o"></i>@Model.DateCreatedStr</li>
+                                <li><i class="fa fa-user"></i>napisao <a href="#">@Model.WrittenBy</a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i><span>@Model.TotalComments</span></a></li>
+                                <li><i class="fa fa-eye"></i>@Model.TotalHits</li>
+                            </ul>
+                            <span class="post-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                            <p>@Model.Description</p>
                         </div>
-                    }
+                    </div>
+                    <p>@Html.Raw(Model.Body)</p>
                 </div>
                 <!-- End block content -->
 

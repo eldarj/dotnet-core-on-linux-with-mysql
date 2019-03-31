@@ -1,0 +1,42 @@
+﻿@{ 
+    Layout = "_LoginLayout";
+    var errorMsg = ViewData["error_poruka"];
+}
+@model LoginVM
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-sm-6 col-centered login-form-1">
+            <h3>Login</h3>
+            <form asp-action="Login" asp-controller="Auth" asp-area="Admin">
+                <div class="form-group">
+                    <input asp-for="Username" type="text" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input asp-for="Password" type="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <span class="text-danger">@errorMsg</span>
+                </div>
+                <div class="checkbox">
+                    <input asp-for="ZapamtiLogin" type="checkbox" class="styled">
+                    <label asp-for="ZapamtiLogin">
+                        Ostani prijavljen
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" value="Login" />
+                </div>
+                <div class="form-group">
+                    <a asp-action="ForgotPwd" asp-controller="Auth" class="ForgetPwd">Zaboravljena šifra?</a>
+                </div>
+                <div class="form-group">
+                    <span>Namte korisnički nalog?</span>
+                    <a asp-action="Register" asp-controller="Auth" class="ForgetPwd">Registrujte se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

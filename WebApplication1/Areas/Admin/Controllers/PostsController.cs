@@ -10,6 +10,7 @@ using DataLib.Models;
 using WebApplication1.Areas.Admin.ViewModels;
 using WebApplication1.Areas.Admin.Helpers;
 using System.Text.RegularExpressions;
+using WebApplication1.Helpers;
 
 namespace WebApplication1.Areas.Admin.Controllers
 {
@@ -67,7 +68,7 @@ namespace WebApplication1.Areas.Admin.Controllers
             if (x.PostId == 0)
             {
                 post = new Post();
-                ctx.Add(post);
+                ctx.Posts.Add(post);
             }
             else
             {
@@ -78,6 +79,7 @@ namespace WebApplication1.Areas.Admin.Controllers
             post.Description = x.Description;
             post.Body = x.Body;
             post.Category = ctx.Categories.Find(x.CategoryId);
+            //post.Moderator = HttpContext.GetLogiranogModeratora();
 
             ctx.SaveChanges();
 
@@ -118,7 +120,7 @@ namespace WebApplication1.Areas.Admin.Controllers
                         var itm = new PostListVM.ItemInfo();
                         itm.Title = p.Title;
                         itm.PostId = p.PostID;
-                        itm.CategoryName = p.Category.Name;
+                        itm.CategoryName = p.Category?.Name;
                         itm.Description = p.Description;
                         if (p.Body != null)
                         {

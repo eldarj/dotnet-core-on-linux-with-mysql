@@ -14,19 +14,19 @@
             </a>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Restoran" asp-area="Admin">
+            <a asp-action="Index" asp-controller="Posts" asp-area="Admin">
                 <i class="fas fa-newspaper"></i>
                 Članci
             </a>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Vlasnik" asp-area="Admin">
+            <a asp-action="Index" asp-controller="Categories" asp-area="Admin">
                 <i class="fas fa-bookmark"></i>
                 Kategorije
             </a>
         </li>
         <li>
-            <a href="#lokacijeDropdown" data-toggle="collapse" class="dropdown-toggle">
+            <a href="#lokacijeDropdown" data-toggle="collapse" class="dropdown-toggle inactive">
                 <i class="fas fa-thumbtack"></i>
                 Gradovi i blokovi
             </a>
@@ -40,13 +40,13 @@
             </ul>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Narucilac" asp-area="Admin">
+            <a asp-action="Index" asp-controller="Narucilac" asp-area="Admin" class="inactive">
                 <i class="fas fa-users"></i>
                 Narucioci
             </a>
         </li>
         <li>
-            <a asp-action="Index" asp-controller="Narudzba" asp-area="Admin">
+            <a asp-action="Index" asp-controller="Narudzba" asp-area="Admin" class="inactive">
                 <i class="fas fa-receipt"></i>
                 Narudžbe
             </a>
@@ -55,7 +55,7 @@
 
     <ul class="list-unstyled CTAs">
         <li>
-            <a asp-controller="Home" asp-area="" class="btn btn-sm btn-light">> Frontend</a>
+            <a asp-controller="Home" asp-area="" class="btn btn-sm btn-light">Nazad na portal</a>
         </li>
     </ul>
 </nav>
