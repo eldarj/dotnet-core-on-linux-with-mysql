@@ -42,6 +42,8 @@ namespace DataLib.Migrations
                     b.Property<int>("CategoryID")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<DateTime>("DateCreated");
+
                     b.Property<string>("Name");
 
                     b.HasKey("CategoryID");
@@ -54,7 +56,7 @@ namespace DataLib.Migrations
                     b.Property<int>("UserID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("DatumKreiranja");
+                    b.Property<DateTime>("DateRegistered");
 
                     b.Property<string>("Email");
 
@@ -74,19 +76,31 @@ namespace DataLib.Migrations
 
                     b.Property<string>("Body");
 
-                    b.Property<int?>("CategoryID");
+                    b.Property<int?>("CategoryId");
+
+                    b.Property<DateTime>("DateCreated");
 
                     b.Property<string>("Description");
 
-                    b.Property<int?>("ModeratorUserID");
+                    b.Property<int>("Hits");
+
+                    b.Property<string>("IntroImageUrl");
+
+                    b.Property<int>("Likes");
+
+                    b.Property<int?>("ModeratorId");
+
+                    b.Property<int>("SharesFacebook");
+
+                    b.Property<int>("SharesTwitter");
 
                     b.Property<string>("Title");
 
                     b.HasKey("PostID");
 
-                    b.HasIndex("CategoryID");
+                    b.HasIndex("CategoryId");
 
-                    b.HasIndex("ModeratorUserID");
+                    b.HasIndex("ModeratorId");
 
                     b.ToTable("Posts");
                 });
@@ -102,11 +116,11 @@ namespace DataLib.Migrations
                 {
                     b.HasOne("DataLib.Models.Category", "Category")
                         .WithMany("Posts")
-                        .HasForeignKey("CategoryID");
+                        .HasForeignKey("CategoryId");
 
                     b.HasOne("DataLib.Models.Moderator", "Moderator")
                         .WithMany("Posts")
-                        .HasForeignKey("ModeratorUserID");
+                        .HasForeignKey("ModeratorId");
                 });
 #pragma warning restore 612, 618
         }

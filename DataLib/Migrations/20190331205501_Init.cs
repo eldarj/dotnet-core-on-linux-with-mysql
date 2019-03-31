@@ -14,7 +14,8 @@ namespace DataLib.Migrations
                 {
                     CategoryID = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(nullable: true),
+                    DateCreated = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -30,11 +31,33 @@ namespace DataLib.Migrations
                     Username = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
-                    DatumKreiranja = table.Column<DateTime>(nullable: false)
+                    DateRegistered = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Moderators", x => x.UserID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AuthTokens",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Value = table.Column<string>(nullable: true),
+                    DateGenerated = table.Column<DateTime>(nullable: false),
+                    Ip = table.Column<string>(nullable: true),
+                    ModeratorId = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AuthTokens", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AuthTokens_Moderators_ModeratorId",
+                        column: x => x.ModeratorId,
+                        principalTable: "Moderators",
+                        principalColumn: "UserID",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -46,39 +69,53 @@ namespace DataLib.Migrations
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
                     Body = table.Column<string>(nullable: true),
-                    CategoryID = table.Column<int>(nullable: true),
-                    ModeratorUserID = table.Column<int>(nullable: true)
+                    IntroImageUrl = table.Column<string>(nullable: true),
+                    DateCreated = table.Column<DateTime>(nullable: false),
+                    Hits = table.Column<int>(nullable: false),
+                    SharesFacebook = table.Column<int>(nullable: false),
+                    SharesTwitter = table.Column<int>(nullable: false),
+                    Likes = table.Column<int>(nullable: false),
+                    CategoryId = table.Column<int>(nullable: true),
+                    ModeratorId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Posts", x => x.PostID);
                     table.ForeignKey(
-                        name: "FK_Posts_Categories_CategoryID",
-                        column: x => x.CategoryID,
+                        name: "FK_Posts_Categories_CategoryId",
+                        column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "CategoryID",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Posts_Moderators_ModeratorUserID",
-                        column: x => x.ModeratorUserID,
+                        name: "FK_Posts_Moderators_ModeratorId",
+                        column: x => x.ModeratorId,
                         principalTable: "Moderators",
                         principalColumn: "UserID",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Posts_CategoryID",
-                table: "Posts",
-                column: "CategoryID");
+                name: "IX_AuthTokens_ModeratorId",
+                table: "AuthTokens",
+                column: "ModeratorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Posts_ModeratorUserID",
+                name: "IX_Posts_CategoryId",
                 table: "Posts",
-                column: "ModeratorUserID");
+                column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Posts_ModeratorId",
+                table: "Posts",
+                column: "ModeratorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "AuthTokens");
+
             migrationBuilder.DropTable(
                 name: "Posts");
 
