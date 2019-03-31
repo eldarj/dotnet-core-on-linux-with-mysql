@@ -25,6 +25,12 @@ namespace DataLib
             {
                 entity.HasKey(p => p.PostID);
                 entity.HasOne(p => p.Category).WithMany(c => c.Posts);
+                entity.HasOne(p => p.Admin).WithMany(a => a.Posts);
+            });
+
+            modelBuilder.Entity<Admin>(entity =>
+            {
+                entity.HasKey(a => a.UserID);
             });
         }
     }

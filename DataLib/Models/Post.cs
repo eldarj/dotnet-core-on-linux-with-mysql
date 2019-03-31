@@ -11,5 +11,6 @@ namespace DataLib.Models
         public string Description { get; set; }
         public string Body { get; set; }
         public virtual Category Category { get; set; }
+        public virtual Admin Admin { get; set; }
     }
 }
