@@ -9,6 +9,7 @@ using DataLib;
 using DataLib.Models;
 using WebApplication1.Areas.Admin.ViewModels;
 using WebApplication1.Areas.Admin.Helpers;
+using System.Text.RegularExpressions;
 
 namespace WebApplication1.Areas.Admin.Controllers
 {
@@ -59,7 +60,7 @@ namespace WebApplication1.Areas.Admin.Controllers
             if (!ModelState.IsValid)
             {
                 x.Categories = AllCategories();
-                return PartialView("Uredi", x);
+                return PartialView("Edit", x);
             }
 
             Post post;
@@ -103,6 +104,7 @@ namespace WebApplication1.Areas.Admin.Controllers
             }
             ctx.Posts.Remove(post);
             await ctx.SaveChangesAsync();
+
             return PartialView(nameof(Index), PreparePosts());
         }
 
@@ -111,14 +113,24 @@ namespace WebApplication1.Areas.Admin.Controllers
         {
             return new PostListVM
             {
-                Items = ctx.Posts
-                    .Select(p => new PostListVM.ItemInfo
-                    {
-                        Title = p.Title,
-                        PostId = p.PostID,
-                        Body = p.Body,
-                        CategoryName = p.Category.Name,
-                        Description = p.Description
+                Items = ctx.Posts.Include(p => p.Category).ToList()
+                    .Select(p => {
+                        var itm = new PostListVM.ItemInfo();
+                        itm.Title = p.Title;
+                        itm.PostId = p.PostID;
+                        itm.CategoryName = p.Category.Name;
+                        itm.Description = p.Description;
+                        if (p.Body != null)
+                        {
+                            itm.Body = p.Body.Length > 50 ?
+                                Regex.Replace(p.Body, "<.*?>", String.Empty).Substring(0, 50) :
+                                Regex.Replace(p.Body, "<.*?>", String.Empty);
+                        } else
+                        {
+                            itm.Body = "-";
+                        }
+
+                        return itm;
                     })
                     .ToList()
             };

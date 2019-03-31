@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult About(string name)
         {
             ViewData["Message"] = "Your application description page.";
             return View();

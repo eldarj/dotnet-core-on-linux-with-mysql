@@ -83,6 +83,11 @@ small.bold {
     color: #145DB8;
 }
 
+.mod-dashboard-badge-2 h6 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
 .div-image-holder {
     min-width: 100px;
     width: 100px;
@@ -231,91 +236,91 @@ input[type=file] {
     left: 0;
     height: 100vh;
     z-index: 10;
-    background: linear-gradient(to bottom, #145DB8 0%, #145D60 100%);
+    background: linear-gradient(to bottom, #000 100%, #000 100%);
 }
 
-    #sidebar:after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-image: url(../../images/administration/sidebar-bg.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: .3;
-        z-index: -1;
-    }
+#sidebar:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/administration/sidebar-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    z-index: -1;
+}
 
-    #sidebar ul li a.dropdown-toggle + ul.collapse:not(.show) {
-        display: block;
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
-    }
+#sidebar ul li a.dropdown-toggle + ul.collapse:not(.show) {
+    display: block;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
 
-    #sidebar ul li a.dropdown-toggle + ul li a {
-        margin: 0;
-        background: transparent;
-        border: none;
-        border-radius: 0;
-        color: #fff;
-    }
+#sidebar ul li a.dropdown-toggle + ul li a {
+    margin: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+}
 
-    #sidebar ul li a.dropdown-toggle + ul {
-        background: rgba(255,255,255,.5);
-        border-radius: 5px;
-        color: #000;
-        margin: 0 5px;
-    }
+#sidebar ul li a.dropdown-toggle + ul {
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;
+    color: #000;
+    margin: 0 5px;
+}
 
-        #sidebar ul li a.dropdown-toggle + ul li a:hover {
-            background: rgba(255, 255, 255, .2);
-            font-weight: 600;
-        }
+#sidebar ul li a.dropdown-toggle + ul li a:hover {
+    background: rgba(255, 255, 255, .2);
+    font-weight: 600;
+}
 
-    #sidebar ul li a {
-        text-align: left;
-    }
+#sidebar ul li a {
+    text-align: left;
+}
 
-    #sidebar .sidebar-header {
-        padding: 20px;
-        border-radius: 100%;
-    }
+#sidebar .sidebar-header {
+    padding: 20px;
+    border-radius: 100%;
+}
 
-        #sidebar .sidebar-header strong {
-            display: none;
-            font-size: 1.8em;
-        }
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
 
-    #sidebar ul.components {
-        padding: 10px;
-        border-bottom: 1px solid #145DB8;
-    }
+#sidebar ul.components {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
 
-    #sidebar ul li a {
-        border-radius: 5px;
-        margin: 5px;
-        padding: 10px;
-        font-size: 1.1em;
-        display: block;
-    }
+#sidebar ul li a {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
 
-        #sidebar ul li a:not(.btn):hover {
-            background: rgba(255, 255, 255, .4);
-        }
+#sidebar ul li a:not(.btn):hover {
+    background: rgba(255, 255, 255, .4);
+}
 
-        #sidebar ul li a i {
-            margin: 0 10px 0 5px;
-            font-size: 16px;
-        }
+#sidebar ul li a i {
+    margin: 0 10px 0 5px;
+    font-size: 16px;
+}
 
-    #sidebar ul li.active > a,
-    a[aria-expanded="true"] {
-        background: rgba(255, 255, 255, .6);
-    }
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    background: rgba(255, 255, 255, .6);
+}
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -340,13 +345,13 @@ ul.CTAs {
     padding: 20px;
 }
 
-    ul.CTAs a {
-        text-align: center;
-        font-size: 0.9em !important;
-        display: block;
-        border-radius: 5px;
-        margin-bottom: 5px;
-    }
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
 
 a.download {
     background: #fff;
@@ -373,9 +378,9 @@ a.article:hover {
     right: 0;
 }
 
-    #content .content-body {
-        padding: 20px 40px;
-    }
+#content .content-body {
+    padding: 20px 40px;
+}
 
 .content-body .card .card-body.big-icon .card-body-icon > i {
     position: absolute;
@@ -395,9 +400,9 @@ a.article:hover {
 /* ---------------------------------------------------
     QUILL EDITOR
 ----------------------------------------------------- */
-#quill-editor {
-    /*min-height: 100px;*/
-}
+/*#quill-editor {
+    min-height: 100px;
+}*/
 
 
 /* ---------------------------------------------------
